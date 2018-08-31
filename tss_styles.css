@@ -1,5 +1,11 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+@font-face {
+    font-family: Quicksand;
+    src: url('Quicksand-Regular.woff') format('woff');
+    src: url('Quicksand-Regular.ttf') format('truetype');
+}
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
@@ -23,9 +29,15 @@ html {
  body {
     color: rgb(91, 91, 91);
     background-color: white;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */ 
  }
 /* Heading Styles */
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 1.5em;
+}
 h1 {
     color:white;
     background-color: rgb(222, 128,60);  
@@ -36,7 +48,10 @@ h1 {
        color: white;
        background-color: rgb(235, 177, 131);
     }
-article#aboutus h1 {
+h1, h2 {
+    font-family: Quicksand, Verdana, Geneva, sans-serif;
+}
+    article#aboutus h1 {
     color: white;
     background-color: rgb(222, 128,60);
 }
@@ -51,6 +66,10 @@ article.syllabus h1, article.syllabus h2{
     color: rgb(101, 101, 101);
 }
 /* Aside and Blockquote Styles */
+aside {
+    font-size: .88em;
+}
+
 aside blockquote {
     color: rgb(232, 165, 116)
 }
